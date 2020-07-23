@@ -2,3 +2,6 @@ build:
     docker:
       backend: backend/Dockerfile
       frontend: frontend/Dockerfile
+run:
+  backend: python -u app.py
+  frontend: serve -s -l 3000 build
