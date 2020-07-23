@@ -2,6 +2,3 @@ build:
     docker:
       backend: backend/Dockerfile
       frontend: frontend/Dockerfile
-run:
-  backend: echo "Starting backend after deployment"
-  frontend: echo "Starting frontend after deployment"
