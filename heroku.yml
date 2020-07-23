@@ -4,4 +4,4 @@ build:
       frontend: frontend/Dockerfile
 run:
   backend: echo "Starting backend after deployment"
-  frontnd: echo "Starting frontend after deployment"
+  frontend: echo "Starting frontend after deployment"
