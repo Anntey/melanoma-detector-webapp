@@ -1,3 +1,4 @@
+<p align="center">Melanoma Detector Web App</p>
 # Melanoma Detector Web App
 
 ![image](melanoma-app.png)
