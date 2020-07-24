@@ -1,9 +1,5 @@
 <h1 align="center">Melanoma Detector Web App</h1>
-<img align="center" src="melanoma-app.png" alt="image" />
-
-# Melanoma Detector Web App
-
-![image](melanoma-app.png)
+<p align="center"><img src="melanoma-app.png" alt="image" /></p>
 
 ## Backend
 Flask RESTful API serves a PyTorch model at http://localhost:8000/predict. Given an input image, it predicts the probability the lesion is malignant.
