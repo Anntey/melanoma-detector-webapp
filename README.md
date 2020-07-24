@@ -1,4 +1,6 @@
 <h1 align="center">Melanoma Detector Web App</h1>
+<img src="melanoma-app.png" alt="image" />
+
 # Melanoma Detector Web App
 
 ![image](melanoma-app.png)
