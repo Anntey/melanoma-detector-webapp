@@ -21,27 +21,19 @@ const App = () => {
       const formData = new FormData()
       formData.append('img', inputFile, inputFile.name)
 
-      // const config = {
-      //   headers: [
-      //     { 'Content-Type': 'multipart/form-data' },
-      //     { 'Access-Control-Allow-Origin': '*' }
-      //   ]
-      // }
-      // axios.post('http://localhost:8000/predict', formData, config)
-      axios({
-        method: 'post',
-        url: 'http://localhost:8000/predict',
-        data: formData,
-        config: {
-          headers: [
-            { 'Content-Type': 'multipart/form-data' },
-            { 'Access-Control-Allow-Origin': '*' }
-          ]
-        }
-      }).then(response => {
-        const prob = parseFloat(response.data.prediction)
-        setPred(prob)
-      })
+      const config = {
+        headers: [
+          { 'Content-Type': 'multipart/form-data' },
+          { 'Access-Control-Allow-Origin': '*' }
+        ]
+      }
+
+      axios
+        .post('http://localhost:8000/predict', formData, config)
+        .then(response => {
+          const prob = parseFloat(response.data.prediction)
+          setPred(prob)
+        })
     }
   }
 

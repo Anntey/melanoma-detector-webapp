@@ -1,7 +1,7 @@
 import requests
 import json
 
-api_url = 'http://localhost:5000/predict'
+api_url = 'http://localhost:8000/predict'
 file_path = '../data/images/ISIC_0052212.jpg'
 
 if __name__ == '__main__':
