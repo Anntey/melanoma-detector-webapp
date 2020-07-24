@@ -2,13 +2,13 @@
 <p align="center"><img src="melanoma-app.png" alt="image" /></p>
 
 ## Backend
-Flask RESTful API serves a PyTorch model at http://localhost:8000/predict. Given an input image, it predicts the probability the lesion is malignant.
+RESTful API made with Flask serves a PyTorch model at http://localhost:8000/predict. Given an input image, it predicts the probability the lesion is malignant.
 
 ## Frontend
 A minimal React frontend at http://localhost:3000 that makes POST requests to the backend when the input image changes.
 
 ## Install
-The following command pulls the images from Dockerhub according to docker-compose.yml.
+The following command builds and start the app:
 ```
-docker-compose upp
+docker-compose up
 ```
