@@ -10,8 +10,8 @@ A minimal React frontend at http://localhost:3000 that makes POST requests to th
 ## How to run?
 The following commands build and start the application:
 ```bash
-~$ git clone https://github.com/Anntey/melanoma-detector-webapp.git
-~$ cd melanoma-detector-webapp
-~$ docker-compose up
+$ git clone https://github.com/Anntey/melanoma-detector-webapp.git
+$ cd melanoma-detector-webapp
+$ docker-compose up
 ```
 You can find examples of input images in `/images`
