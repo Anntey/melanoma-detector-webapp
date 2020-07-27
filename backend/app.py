@@ -12,11 +12,7 @@ warnings.filterwarnings('ignore')
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/ping')
-def ping():
-    print('Someone is pingin')
-    return 'pong'
-
+# Some helper functions for /predict
 def load_img(request):
     img = request.files['img']
     img = imageio.imread(img, pilmode = "RGB")
@@ -39,6 +35,11 @@ def get_prediction(img):
         pred = pred.numpy()
     return pred
 
+@app.route('/ping')
+def ping():
+    print('Someone is pingin')
+    return 'pong'
+
 @app.route('/predict', methods = ['POST'])
 def predict():
     if request.method == 'POST':
@@ -51,9 +52,9 @@ if __name__ == '__main__':
     global model
     model = load_model()
     if(isinstance(model, torch.nn.Module)):
-        print('Successful')
+        print('...Successful')
     else:
-        print('Failed')
+        print('...Failed')
     load_dotenv()
     host = os.getenv('HOST')
     port = os.getenv('PORT')
