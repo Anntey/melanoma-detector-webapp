@@ -9,7 +9,7 @@ A minimal React frontend at http://localhost:3000 that makes POST requests to th
 
 ## How to run?
 The following commands build and start the application:
-```console
+```shellscript
 git clone https://github.com/Anntey/melanoma-detector-webapp.git
 cd melanoma-detector-webapp
 docker-compose up
